@@ -1,0 +1,139 @@
+/* --- Bagian Umum (Font, Background) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font Modern */
+    background-color: #e9ecef; /* Background abu-abu muda yang lembut */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Taruh konten di atas (untuk tabel yang panjang) */
+    min-height: 100vh;
+    margin: 20px 0; /* Tambahkan sedikit margin di atas dan bawah */
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #343a40; /* Hitam gelap */
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007bff;
+    text-align: center;
+}
+
+/* --- 1. Style Form (Card) --- */
+.card-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih tebal */
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin-top: 50px; /* Jarak dari atas */
+}
+
+/* Input Group dan Label */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Lebih tebal */
+    color: #495057;
+}
+
+/* Input Text dan File */
+.form-group input[type="text"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Efek fokus warna biru */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Tombol SIMPAN */
+.form-group input[type="submit"] {
+    background-color: #28a745; /* Warna hijau yang menarik */
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #218838; /* Hijau lebih gelap */
+    transform: translateY(-2px); /* Efek sedikit naik */
+}
+
+/* --- 2. Style Tabel Data (.data-table) --- */
+.data-table-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    width: 90%;
+    max-width: 900px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan border ganda */
+}
+
+/* Header Tabel */
+.data-table th {
+    background-color: #007bff; /* Biru terang untuk header */
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    font-size: 1em;
+}
+
+/* Baris Data */
+.data-table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    color: #343a40;
+    vertical-align: middle; /* Pusatkan vertikal */
+}
+
+/* Warna selang-seling (Zebra Stripping) */
+.data-table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Warna abu-abu sangat muda */
+}
+
+/* Link DELETE */
+.data-table a {
+    color: #dc3545; /* Merah bahaya */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.data-table a:hover {
+    color: #a71d2a;
+    text-decoration: underline;
+}
+
+/* Style untuk Gambar di Tabel */
+.data-table img {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    display: block;
+    margin: 0 auto;
+}
